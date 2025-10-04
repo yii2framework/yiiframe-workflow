@@ -24,12 +24,12 @@ to the require section of your `composer.json` file.
 
 ## Configuration
 
-For this "*Quick start Guide*" we will be using **default configuration settings**, but remember that *yii2-workflow* is designed to be highly
+For this "*Quick start Guide*" we will be using **default configuration settings**, but remember that *yiiframe-workflow* is designed to be highly
 flexible so to adapt to a lot of execution contexts... well at least that was my goal.
 
 ## Create A Workflow
 
-A workflow is defined as a PHP class that implements the `\raoul2000\workflow\source\file\IWorkflowDefinitionProvider` interface. which
+A workflow is defined as a PHP class that implements the `\yiiframe\workflow\source\file\IWorkflowDefinitionProvider` interface. which
 declares the *getDefinition()* method. This method must return an array representing the workflow definition.
 
 Let's define a very *simple workflow* that will be used to manage posts in a basic blog system.
@@ -127,7 +127,7 @@ $post->sendToStatus('publish');	// danger zone !
 Game Over ! There is no transition between *deleted* and *publish*, and that's what *SimpleWorkflow* tries to explain to our
 fearless post object.
 
-	Workflow Exception – raoul2000\workflow\base\WorkflowException
+	Workflow Exception – yii2framework\workflow\base\WorkflowException
 	No transition found between status PostWorkflow/deleted and PostWorkflow/publish
 
 Yes, that's severe, but there was many ways to avoid this exception like for instance by first validating that the transition was possible.
@@ -138,15 +138,15 @@ This is just one way of using the *SimpleWorkflowBehavior* but there's much more
 
 You will find additional information there :
 
-- [yii2-workflow Usage Guide](http://raoul2000.github.io/yii2-workflow/)
-- [yii2-workflow Class Reference](http://raoul2000.github.io/yii2-workflow/class-ref/)
-- [Demo](http://raoul2000.ass-team.fr/index.php?r=workflow/status-history/update) : a simple example based on the *Post* use case.
+- [yiiframe-workflow Usage Guide](http://yii2framework.github.io/yiiframe-workflow/)
+- [yiiframe-workflow Class Reference](http://yii2framework.github.io/yiiframe-workflow/class-ref/)
+- [Demo](http://yii2framework.ass-team.fr/index.php?r=workflow/status-history/update) : a simple example based on the *Post* use case.
 
 You may also be interested in the following projects developed around yii2-workflow :
 
-- [yii2-workflow-view](https://github.com/raoul2000/yii2-workflow-view) : A Widget to display workflows ([demo](http://raoul2000.ass-team.fr/index.php?r=workflow/status-history/update))
-- [yii2-workflow-manager](https://github.com/cornernote/yii2-workflow-manager) : A Module to manage workflows
-- [yii2-wizflow](https://github.com/raoul2000/yii2-wizflow) : a proof of concept that mixes the Wizard UI pattern with workflow ([Demo](http://raoul2000.ass-team.fr/index.php?r=workflow/wizflow/init))
+- [yiiframe-workflow-view](https://github.com/yii2framework/yiiframe-workflow-view) : A Widget to display workflows ([demo](http://yii2framework.ass-team.fr/index.php?r=workflow/status-history/update))
+- [yiiframe-workflow-manager](https://github.com/cornernote/yiiframe-workflow-manager) : A Module to manage workflows
+- [yiiframe-wizflow](https://github.com/yii2framework/yiiframe-wizflow) : a proof of concept that mixes the Wizard UI pattern with workflow ([Demo](http://yii2framework.ass-team.fr/index.php?r=workflow/wizflow/init))
 - ..and more to come
 
 License

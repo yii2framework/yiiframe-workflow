@@ -5,13 +5,12 @@
 		"yii2",
 		"workflow"
 	],
-	"homepage" : "http://raoul2000.github.io/yii2-workflow/guide-README.html",
+	"homepage" : "http://yii2framework.github.io/yiiframe-workflow/guide-README.html",
 	"type" : "yii2-extension",
 	"license" : "BSD-3-Clause",
 	"support" : {
-		"issues" : "https://github.com/raoul2000/yii2-workflow/issues",
-		"source" : "https://github.com/raoul2000/yii2-workflow",
-		"email" : "raoul.boulard@gmail.com"
+		"issues" : "https://github.com/yii2framework/yiiframe-workflow/issues",
+		"source" : "https://github.com/yii2framework/yiiframe-workflow",
 	},
 	"minimum-stability" : "stable",
 	"require" : {
@@ -36,8 +35,7 @@
 	},
 	"authors" : [{
 			"name" : "yii2framework",
-			"email" : "raoul.boulard@gmail.com",
-			"homepage" : "https://github.com/raoul2000/yii2-workflow"
+			"homepage" : "https://github.com/yii2framework/yiiframe-workflow"
 		}
 	]
 }
